@@ -1,0 +1,88 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Fera's Microcosmos</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,900" rel="stylesheet"> 
+	<!--<link rel="shortcut icon" href="favicon.ico"/>-->
+</head>
+
+<body>
+	<header>
+		<div id="banner">
+			<h1 class="title">Fera's Microcosmos</h1>
+			<h3 class="title">- Hello World! -</h3>
+		</div>
+		<div id="navbar">
+			<div id="navbuttons">
+				<a>Projects</a>
+				<a href="sources_en.html">Sources</a>
+				<a href="index.html">Magyar</a>
+			</div>
+		</div>
+	</header>
+
+	<div id="introduction" class="container">
+		<h2>Hello there!</h2>
+		<p>I am Fera, and this is the repository of my hobby programming projects. As the title suggests, you will mostly find simulations and games here. Things, that with a slight exaggeration can be considered as little "cosmoses". Feel free to look around :)</p>
+	</div>
+
+	<div class="project container">
+		<h3>Game of Life <span class="date">[Oktober 29th, 2017]</span></h2>
+		<img src="img/game_of_life.png" class="thumbnail">
+		<p>My take on the legendary <a class="text_link" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Game of Life</a> by mathematician John Conway. The rules of the game are really simple, yet high-level phenomena can emerge from the operation of such simple rules. The tiles on the grid are "cells". Each cell can either be dead or alive. the state of a cell determined by the state of its neighbors. A living cell can die by having less than three neighbors, as of isolation, or having more than four, as of overcrowding. Otherwise, the cell survives. When a dead cell has exactly three living neighbors it becomes alive, as of reproduction. Theese rules are applyed each frame simultainiously on every cell.<br>
+		Groups of cells "species" can be identified as time passes. These multi-cellular entities can exhibit some peculiar emergent qualities, that were not present in the starting set of rules. Movement, growth, reproduction, maybe even intelligence? In any case it is fun to watch.</p>
+		<table id="life_table">
+			<tr>
+				<th>Controls</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>Start/Stop</td>
+				<td>Space</td>
+			</tr>
+			<tr>
+				<td>Randomize</td>
+				<td>Ctrl</td>
+			</tr>
+			<tr>
+				<td>Draw cells</td>
+				<td>Mouse 1</td>
+			</tr>
+		</table>
+		<a class="project_btn" href="projects\Game_of_Life_v0.81\index.html" target="_blank">Run</a>
+		<a class="project_btn" href="https://github.com/TheRealWalrus/Game-of-Life" target="_blank">GitHub</a>
+	</div>
+
+	<div class="project container">
+		<h3>Alien Aggressors <span class="date">[Oktober, 2017]</span></h2>
+		<img src="img/alien_aggressors.png" class="thumbnail">
+		<p>This was my first project, that is more complex than a snippet of code. As you might have guessed it is a tribute to the classic Space Invaders. A major inspiration was a <a class="text_link" href="https://www.youtube.com/watch?v=biN3v3ef-Y0" target="_blank">coding challenge</a> by Dan Shiffman. I completed the exercise in the video and then kept improving the project bit by bit. It is not perfect, but it turned out to be quite playable. The game has a local multiplayer mode, so if you are up for some couch co-op fun give it a go. Special thanks to Balage for the cool art design.</p>
+		<table id="alien_table">
+			<tr>
+				<th>Controls</th>
+				<th>Player 1</th>
+				<th>Player 2</th>
+			</tr>
+			<tr>
+				<td>Left</td>
+				<td>Left Arrow</td>
+				<td>X</td>
+			</tr>
+			<tr>
+				<td>Right</td>
+				<td>Right Arrow</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>Shoot</td>
+				<td>Space</td>
+				<td>Y</td>
+			</tr>
+		</table>
+		<a class="project_btn" href="projects\Alien_Aggressors_v0.89\index.html" target="_blank">Play</a>
+		<a class="project_btn" href="https://github.com/TheRealWalrus/Alien-Aggressors" target="_blank">GitHub</a>
+	</div>
+	<footer></footer>
+</body>
