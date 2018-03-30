@@ -31,26 +31,52 @@
 
 	<div id="introduction" class="container">
 		<h2>Üdvözöllek!</h2>
-		<!--<p>I am Fera, and this is the repository of my hobby programming projects. As the title suggests, you will mostly find simulations and games here. Things, that with a slight exaggeration can be considered as little "cosmoses". Feel free to look around :)</p>-->
-		<p>Fera vagyok, és ez a gyűjtőhelye a programozással kapcsolatos hobbi projektjeimnek. Ahogy a cím sugallja, nagyrész szimulációkat, és játékokat fogsz itt találni. Olyan dolgokat, amik egy kis túlzással nevezhetők apró "kozmoszoknak". Nézz körül bátran :)</p>
+		<p>Fera vagyok, és ez a gyűjtőhelye a programozással kapcsolatos hobbi projektjeimnek. Ahogy a cím sugallja, nagyrészt szimulációkat, és játékokat fogsz itt találni. Olyan dolgokat, amik egy kis túlzással nevezhetők apró "kozmoszoknak". Nézz körül bátran :)</p>
 	</div>
 
 	<div class="project container">
-		<h3>Snake <span class="date">[2017, december 22.]</span></h2>
-		<img src="img/snake.png" class="thumbnail">
-		<p>Egy egyszerű Snake játék JavaScriptben. Néhány óra munka eredménye. Még az időből van mit lefaragni, de így is vállalható :) </br>
-		Irányítás a "nyíl" billentyűkkel történik.</p>
+		<h3>Meteorids <span class="date">[2018, március 30.]</span></h2>
+		<img src="img/meteroids.png" class="thumbnail">
+		<p>Egy újabb klasszikus saját elgondolásban. Itt az eredetihez hasonló minimalista látványvilágot próbáltam látrehozni. Egy kis extra a játékmenet szemontjából, hogy a hajó túl sok tüzelés után túlmelegszik, és fegyvere egy idejig használhatatlanná vállik. Ezt a rendszert a Mass Effect inspirálta.
+		</br>
+		Sikerült jónéhány újononnan tanult koncepciót felhasználnom. Többek között kreáltam egy primitív fizikai "motort" ami elvégzi a játékban szereplő testek lendültének, sebességének, súrlódásának és tolóerejének kiszámítását. A forgómozgásokat, és az meteoridák kör szerű alakját trigonometria segítségével írtam le. A testek ütközésének megállapításához nagy segítséget nyújtott <a class="text_link" href="http://www.jeffreythompson.org/collision-detection/" target="_blank">Jeff Thompson könyve</a>.</p>
 
-		<a class="project_btn" href="projects\Snake\index.html" target="_blank">Játék</a>
-		<a class="project_btn" href="https://github.com/TheRealWalrus/Snake" target="_blank">GitHub</a>
+		<table id="alien_table">
+			<tr>
+				<th>Irányítás</th>
+				<th>1. Játékos</th>
+				<th>2. Játékos</th>
+			</tr>
+			<tr>
+				<td>Balra</td>
+				<td>Balra nyíl</td>
+				<td>S</td>
+			</tr>
+			<tr>
+				<td>Jobbra</td>
+				<td>Jobbra nyíl</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<td>Előre</td>
+				<td>Fel nyíl</td>
+				<td>E</td>
+			</tr>
+			<tr>
+				<td>Lövés</td>
+				<td>Space</td>
+				<td>G</td>
+			</tr>
+		</table>
+
+		<a class="project_btn" href="https://github.com/TheRealWalrus/Meteorids/releases/download/0.9/Meteorids.v0.9.zip" target="_blank">Letöltés</a>
+		<a class="project_btn" href="https://github.com/TheRealWalrus/Meteorids" target="_blank">GitHub</a>
 	</div>
 
 	<div class="project container">
 		<h3>Az Élet Játéka <span class="date">[2017, október 29.]</span></h2>
 		<img src="img/game_of_life.png" class="thumbnail">
-		<!--<p>My take on the legendary <a class="text_link" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Game of Life</a> by mathematician John Conway. The rules of the game are really simple, yet high-level phenomena can emerge from the operation of such simple rules. The tiles on the grid are "cells". Each cell can either be dead or alive. the state of a cell determined by the state of its neighbors. A living cell can die by having less than three neighbors, as of isolation, or having more than four, as of overcrowding. Otherwise, the cell thrives. When a dead cell has exactly three living neighbors it becomes alive, as of reproduction. Theese rules are applyed each frame simultainiously on every cell.<br>
-		Groups of cells "species" can be identified as time passes. These multi-cellular entities can have some peculiar emergent qualities. Movement, growth, reproduction, maybe even intelligence? In any case it is fun to watch.</p>-->
-		<p>A saját verzióm a matematikus, Johny Conway, legendás  <a class="text_link" href="https://hu.wikipedia.org/wiki/%C3%89letj%C3%A1t%C3%A9k" target="_blank">Életjátékáról</a>. A szabályok rendkívül egyszerűek. Ennek ellenére a játék érdekessége, hogy mennyire összetett magasabb rendű folyamatok jöhetnek létre egyszerű szabályok összjátékából. Nevezzük a négyzeteket "sejteknek". Minden egyes sejt lehet élő, vagy halott, és az állapotát a vele szomszédos sejtek állapota határozza meg. Egy élő sejt elpusztul amennyiben kevesebb, mint három élő szomszédja van (a magány miatt), vagy ha négynél több élő szomszédja van (túlnépesedés). Máskülönben a sejt életben marad. Ha egy halott sejtet pontosan három élő sejt fog közre, a sejt élővé válik (reprodukció). Ezen szabályokat a program egy időben hajtja végre minden egyes sejten.<br>
+		<p>A saját verzióm a matematikus, Johny Conway, legendás  <a class="text_link" href="https://hu.wikipedia.org/wiki/%C3%89letj%C3%A1t%C3%A9k" target="_blank">Életjátékáról</a>. A szabályok rendkívül egyszerűek. Ennek ellenére a játék érdekessége, hogy mennyire összetett magasabb rendű folyamatok jöhetnek létre egyszerű szabályok összjátékából. Nevezzük a négyzeteket "sejteknek". Minden egyes sejt lehet élő, vagy halott, és az állapotát a vele szomszédos sejtek állapota határozza meg. Egy élő sejt elpusztul amennyiben kevesebb, mint három élő szomszédja van (a magány miatt), vagy ha négynél több élő szomszédja van (túlnépesedés). Máskülönben a sejt életben marad. Ha egy halott sejtet pontosan három élő sejt fog közre, a sejt élővé válik. Ezen szabályokat a program egy időben hajtja végre minden egyes sejten.<br>
 		Ahogy telik az idő sejtcsoportosulások alakulnak ki. Ezek a többsejtű organizmusok olyan tulajdonságokkal rendelkezhetnek, amelyek nem részei a játék alapszabályainak. A mozgás, növekedés, reprodukció képességével, talán még intelligenciával is? Minden esetre érdekes elnézni.</p>
 		<table id="life_table">
 			<tr>
@@ -77,7 +103,6 @@
 	<div class="project container">
 		<h3>Alien Aggressors <span class="date">[2017, október]</span></h2>
 		<img src="img/alien_aggressors.png" class="thumbnail">
-		<!--<p>This was my first project, that is more complex than a snippet of code. As you might have guessed it is a tribute to the classic Space Invaders. A major inspiration was a <a class="text_link" href="https://www.youtube.com/watch?v=biN3v3ef-Y0" target="_blank">coding challenge</a> by Dan Shiffman. I completed the exercise in the video and then kept improving the project bit by bit. It is not perfect, but it turned out to be quite playable. The game has a local multiplayer mode, so if you are up for some couch co-op fun give it a go. Special thanks to Balage for the cool art design.</p>-->
 		<p>Ez volt az első projektem, ami bonyolultabb néhány sor kódnál. Egy kis tribűt a klasszikus Space Invaders-nek. Az egyik fő inspiráció Dan Shiffman <a class="text_link" href="https://www.youtube.com/watch?v=biN3v3ef-Y0" target="_blank">coding challange</a> videója volt. Megcsináltam az ott látható gyakorlatot, majd időnkét visszatérve mindig egy kicsit hozzátoldottam a játékhoz. Nem tökéletes, de úgy néz ki hogy a végeredmény egész játszható. Van benne helyi többjátékos mód, úgyhogy, ha egy kis kooperatív mókára vágytok, tegyetek egy próbát. Külön köszönet Balagenak a menő grafikáért.</p>
 		<table id="alien_table">
 			<tr>

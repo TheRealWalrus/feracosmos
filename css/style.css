@@ -168,7 +168,7 @@ footer {
 
 /* *********************************** PROJECT SPECIFIC ********* */
 
-#alien_table th, #alien_table td {
+#alien_table th, #alien_table td { /* using for "Meteroids" as well */
 	width: 140px;
 }
 
