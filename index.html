@@ -1,6 +1,5 @@
 <!--To DO:
-	Below the thumbnail, with grey text, environment, libraries, technical details etc.
-	"little browser icon" favicon
+	favicon
 	Joy to key reference?
 -->
 
@@ -11,6 +10,7 @@
 	<title>Fera Mikrokozmosza</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,900" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<!--<link rel="shortcut icon" href="favicon.ico"/>-->
 </head>
 
@@ -35,11 +35,20 @@
 	</div>
 
 	<div class="project container">
-		<h3>Meteorids <span class="date">[2018, március 30.]</span></h2>
+		<h3>Raj szimuláció <span class="date">[2018, június 24.] [Processing/Java]</span></h2>
+		<img src="img/flow_field_following.png" class="thumbnail">
+		<p>Ebben a szimulációban a Craig Reynolds féle "irányító viselkedéseket" implementáltam. Ezek a szabályok egyszerű és elegáns leírásai annak a komplex és organikus mozgásnak, amit a barna háromszögeken megfigyelhetünk. A kollektív madárraj, halraj szerű mozgás valójában illúzió. A mögöttes logika egy folyadék szimulációhoz hasonlatos. Az egyes elemek nincsenek tisztában egymás állapotával. Egy rejtett, mederszerű mező irányítja egységesnek tűnő viselkedésüket.</p>
+
+		<a class="project_btn" href="https://www.openprocessing.org/sketch/663822" target="_blank">Futtatás</a>
+		<a class="project_btn" href="https://github.com/TheRealWalrus/Nature-of-Code-exercises/tree/master/e_6_7_flow_field_following" target="_blank">GitHub</a>
+	</div>
+
+	<div class="project container">
+		<h3>Meteorids <span class="date">[2018, március 30.] [Processing/Java]</span></h2>
 		<img src="img/meteroids.png" class="thumbnail">
-		<p>Egy újabb klasszikus saját elgondolásban. Itt az eredetihez hasonló minimalista látványvilágot próbáltam létrehozni. Egy kis extra a játékmenet szempontjából, hogy a hajó túl sok tüzelés után túlmelegszik, és fegyvere egy ideig használhatatlanná válik. Ezt a rendszert a Mass Effect inspirálta.
+		<p>Egy újabb klasszikus saját elgondolásban. Itt az eredetihez hasonló minimalista látványvilágot próbáltam létrehozni. Egy kis extra a játékmenet szempontjából, hogy a hajó túl sok tüzelés után túlmelegszik, és fegyvere egy ideig használhatatlanná válik.
 		</br>
-		Sikerült jó néhány újonnan tanult koncepciót felhasználnom. Többek között kreáltam egy primitív fizikai "motort" ami elvégzi a játékban szereplő testek lendültének, sebességének, súrlódásának és tolóerejének kiszámítását. A forgómozgásokat, és az meteoridák kör szerű alakját trigonometria segítségével írtam le. A testek ütközésének megállapításához nagy segítséget nyújtott <a class="text_link" href="http://www.jeffreythompson.org/collision-detection/" target="_blank">Jeff Thompson könyve</a>.</p>
+		Sikerült jó néhány újonnan tanult koncepciót felhasználnom. Többek között kreáltam egy primitív fizikai "motort" ami elvégzi a játékban szereplő testek lendültének, sebességének, súrlódásának és tolóerejének kiszámítását. A testek ütközésének megállapításához nagy segítséget nyújtott <a class="text_link" href="http://www.jeffreythompson.org/collision-detection/" target="_blank">Jeff Thompson könyve</a>.</p>
 
 		<table id="alien_table">
 			<tr>
@@ -64,7 +73,7 @@
 			</tr>
 			<tr>
 				<td>Lövés</td>
-				<td>Space</td>
+				<td>Ctrl</td>
 				<td>G</td>
 			</tr>
 		</table>
@@ -75,7 +84,7 @@
 	</div>
 
 	<div class="project container">
-		<h3>Az Élet Játéka <span class="date">[2017, október 29.]</span></h2>
+		<h3>Az Élet Játéka <span class="date">[2017, október 29.] [JavaScript] [Felhasznált könyvtár: P5JS]</span></h2>
 		<img src="img/game_of_life.png" class="thumbnail">
 		<p>A saját verzióm a matematikus, Johny Conway, legendás  <a class="text_link" href="https://hu.wikipedia.org/wiki/%C3%89letj%C3%A1t%C3%A9k" target="_blank">Életjátékáról</a>. A szabályok rendkívül egyszerűek. Ennek ellenére a játék érdekessége, hogy mennyire összetett magasabb rendű folyamatok jöhetnek létre egyszerű szabályok összjátékából. Nevezzük a négyzeteket "sejteknek". Minden egyes sejt lehet élő, vagy halott, és az állapotát a vele szomszédos sejtek állapota határozza meg. Egy élő sejt elpusztul amennyiben kevesebb, mint három élő szomszédja van (a magány miatt), vagy ha négynél több élő szomszédja van (túlnépesedés). Máskülönben a sejt életben marad. Ha egy halott sejtet pontosan három élő sejt fog közre, a sejt élővé válik. Ezen szabályokat a program egy időben hajtja végre minden egyes sejten.<br>
 		Ahogy telik az idő sejtcsoportosulások alakulnak ki. Ezek a többsejtű organizmusok olyan tulajdonságokkal rendelkezhetnek, amelyek nem részei a játék alapszabályainak. A mozgás, növekedés, reprodukció képességével, talán még intelligenciával is? Minden esetre érdekes elnézni.</p>
@@ -102,9 +111,9 @@
 	</div>
 
 	<div class="project container">
-		<h3>Alien Aggressors <span class="date">[2017, október]</span></h2>
+		<h3>Alien Aggressors <span class="date">[2017, október] [JavaScript] [Felhasznált könyvtár: P5JS]</span></h2>
 		<img src="img/alien_aggressors.png" class="thumbnail">
-		<p>Ez volt az első projektem, ami bonyolultabb néhány sor kódnál. Egy kis tribűt a klasszikus Space Invaders-nek. Az egyik fő inspiráció Dan Shiffman <a class="text_link" href="https://www.youtube.com/watch?v=biN3v3ef-Y0" target="_blank">coding challange</a> videója volt. Megcsináltam az ott látható gyakorlatot, majd időnkét visszatérve mindig egy kicsit hozzátoldottam a játékhoz. Nem tökéletes, de úgy néz ki, hogy a végeredmény egész játszható. Van benne helyi többjátékos mód, úgyhogy, ha egy kis kooperatív mókára vágytok, tegyetek egy próbát. Külön köszönet Balagenak a menő grafikáért.</p>
+		<p>Az első általam írt játék. Egy kis tribűt a klasszikus Space Invaders-nek. Nem tökéletes, de úgy néz ki, hogy a végeredmény egész játszható. Van benne helyi többjátékos mód, úgyhogy, ha egy kis kooperatív mókára vágytok, tegyetek egy próbát. Külön köszönet Balagenak a menő grafikáért.</p>
 		<table id="alien_table">
 			<tr>
 				<th>Irányítás</th>

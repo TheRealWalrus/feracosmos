@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<title>Fera's Microcosmos</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,900" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,800,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<!--<link rel="shortcut icon" href="favicon.ico"/>-->
 </head>
 
@@ -29,11 +30,20 @@
 	</div>
 
 	<div class="project container">
-		<h3>Meteorids <span class="date">[March 30th, 2018]</span></h2>
+		<h3>Flocking simulation <span class="date">[June 24th, 2018] [Processing/Java]</span></h2>
+		<img src="img/flow_field_following.png" class="thumbnail">
+		<p>In this simulation, I have implemented Craig Reynolds's "steering behaviors". These rules are a simple and elegant way to describe the complex and organic motion of the brown triangles. The collective bird flock or fish school like behavior is just an illusion. The underlying logic is more like a fluid simulation. None of the agents is aware of the state of its neighbors. A hidden river-bed like field coordinates their cohesive movement.</p>
+
+		<a class="project_btn" href="https://www.openprocessing.org/sketch/663822" target="_blank">Futtatás</a>
+		<a class="project_btn" href="https://github.com/TheRealWalrus/Nature-of-Code-exercises/tree/master/e_6_7_flow_field_following" target="_blank">GitHub</a>
+	</div>
+
+	<div class="project container">
+		<h3>Meteorids <span class="date">[March 30th, 2018] [Processing/Java]</span></h2>
 		<img src="img/meteroids.png" class="thumbnail">
-		<p>Another classic game remake. I tried to recreate the minimalistic graphic design of the original. A little gameplay addition: If you fire for an extended period of time, the gun will overheat and will become unusable for a while. This system was inspired by Mass Effect.
+		<p>Another classic game remake. I tried to recreate the minimalistic graphic design of the original. A little gameplay addition: If you fire for an extended period of time, the gun will overheat and will become unusable for a while.
 		</br>
-		I managed to use several newly learned concepts. For example, I created a primitive physics engine that can calculate the velocity, acceleration, friction, and thrust of the in-game objects. The angular velocity and the circular shape of the asteroids are determined using trigonometry. Jeff Thompson's <a class="text_link" href="http://www.jeffreythompson.org/collision-detection/" target="_blank">Collision detection</a> algorithms were used for the project.</p> 
+		I managed to use several newly learned concepts. For example, I created a primitive physics engine that can calculate the velocity, acceleration, friction, and thrust of the in-game objects. Jeff Thompson's <a class="text_link" href="http://www.jeffreythompson.org/collision-detection/" target="_blank">Collision detection</a> algorithms were used for the project.</p> 
 
 		<table id="alien_table">
 			<tr>
@@ -69,7 +79,7 @@
 	</div>
 
 	<div class="project container">
-		<h3>Game of Life <span class="date">[Oktober 29th, 2017]</span></h2>
+		<h3>Game of Life <span class="date">[Oktober 29th, 2017] [JavaScript] [Additional library: P5JS]</span></h2>
 		<img src="img/game_of_life.png" class="thumbnail">
 		<p>My take on the legendary <a class="text_link" href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Game of Life</a> by mathematician John Conway. The rules of the game are really simple, yet high-level phenomena can emerge from the operation of such simple rules. The tiles on the grid are "cells". Each cell can either be dead or alive. the state of a cell determined by the state of its neighbors. A living cell can die by having less than three neighbors, as of isolation, or having more than four, as of overcrowding. Otherwise, the cell survives. When a dead cell has exactly three living neighbors it becomes alive. These rules are applied each frame simultaneously on every cell.<br>
 		Groups of cells "species" can be identified as time passes. These multi-cellular entities can exhibit some peculiar emergent qualities, that were not present in the starting set of rules. Movement, growth, reproduction, maybe even intelligence? In any case, it is fun to watch.</p>
@@ -96,9 +106,9 @@
 	</div>
 
 	<div class="project container">
-		<h3>Alien Aggressors <span class="date">[Oktober, 2017]</span></h2>
+		<h3>Alien Aggressors <span class="date">[Oktober, 2017] [JavaScript] [Additional library: P5JS]</span></h2>
 		<img src="img/alien_aggressors.png" class="thumbnail">
-		<p>This was my first project, that is more complex than a snippet of code. As you might have guessed it is a tribute to the classic Space Invaders. A major inspiration was a <a class="text_link" href="https://www.youtube.com/watch?v=biN3v3ef-Y0" target="_blank">coding challenge</a> by Dan Shiffman. I completed the exercise in the video and then kept improving the project bit by bit. It is not perfect, but it turned out to be quite playable. The game has a local multiplayer mode, so if you are up for some couch co-op fun give it a go. Special thanks to Balage for the cool art design.</p>
+		<p>My first game remake. As you might have guessed it is a tribute to the classic Space Invaders. It is not perfect, but it turned out to be quite playable. The game has a local multiplayer mode, so if you are up for some couch co-op fun give it a go. Special thanks to Balage for the cool art design.</p>
 		<table id="alien_table">
 			<tr>
 				<th>Controls</th>

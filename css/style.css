@@ -3,7 +3,7 @@
 	padding: 0; /* 0 does not require a unit of measurement */
 	background-color: black;
 	color: white;
-	font-family: courier, serif;
+	font-family: 'Space Mono', monospace;
 }
 
 .container {

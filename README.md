@@ -1,2 +1,2 @@
 # feracosmos
-A webpage for my programming projects
+A website for my hobby programming projects.
