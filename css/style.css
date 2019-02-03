@@ -15,7 +15,7 @@
 }
 
 th, td, p, ul {
-	text-align: left;
+	text-align: justify;
 	line-height: 1.7;
 	background: inherit;
 }
