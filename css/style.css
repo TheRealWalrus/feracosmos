@@ -144,8 +144,11 @@ footer {
 	color: grey;
 }
 
+table {
+	margin-bottom: 30px;
+}
+
 .project_btn {
-	margin-top: 30px;
 	font-size: large;
 	font-weight: 100;
 	display: inline-block; /* extends clickable area around the text */
